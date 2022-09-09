@@ -1,0 +1,15 @@
+[alias]
+    a = add
+    b = branch
+    c = commit
+    co = checkout
+    cob = checkout -b
+    s = status
+    undo = reset HEAD~1
+    l = !git log --pretty=format:\"%C(magenta)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr) [%an]\" --abbrev-commit -30
+
+[push]
+    default = current
+
+[rebase]
+    autosquash = true
